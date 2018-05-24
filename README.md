@@ -375,6 +375,10 @@ Every web page: Netflix, Facebook, Twitter, Google, The NRC Handelsblad, Le
 Monde &mdash; _every single one uses the standard that **you** just worked with
 to inform and change lives every day_. Welcome to the club!
 
+When you're done, click on the **Terminal** of LearnIDE, and type `learn
+submit`. This will log your progress to our systems. Make sure that you have
+your HTML content in a file called `my_list.html` in order to pass the check.
+
 ## Conclusion
 
 In this lesson we saw that by editing a plain text file and augmenting
