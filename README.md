@@ -1,6 +1,5 @@
 # Experiencing HTML Lab
 
-
 ## Problem Statement
 
 How do we go about writing text that is designed for viewing on the web? How
@@ -25,13 +24,13 @@ confused, ask for help or talk to a friend.
 
 ## Discern Between Text That Is Designated As _markup_ Versus _content_
 
-Launch LearnIDE (use the open IDE button) and create a new file called
-`my_list`.txt. Your file extension suggests that the content will be (plain-)
+Launch the Learn IDE (use the Open IDE button) and create a new file called
+`my_list.txt`. Your file extension suggests that the content will be (plain-)
 text.
 
 Think of a collection of things united by theme: Pok&eacute;mon, Old-school
 MC's, Prime Ministers of New Zealand, Magical Beasts and Where to Find Them,
-etc.
+etc...
 
 Now write in a few entries in your file. Here's one from us (highly-influenced
 by English post-punk music).
@@ -85,6 +84,7 @@ names of songs by wrapping each line in quotation (`"`) marks like so:
 "Nine While Nine"
 "Girlfriend In a Coma"
 ```
+
 Amazingly this is _another_ cultural precept ("punctuation") which appeals to
 another precept ("entitling of works of art").
 
@@ -142,7 +142,7 @@ E. "Girlfriend In a Coma"
 
 Yet again, there's nothing in the content itself that communicates what it
 represents. To experience this pain keenly, let's try asking a computer what it
-thinks. In LearnIDE, click on the **Terminal** window and type `httpserver`.
+thinks. In the Learn IDE, click on the **Terminal** window and type `httpserver`.
 You'll be given a web site address.
 
 For example:
@@ -253,7 +253,6 @@ Wrap the entire set of `<li>` items with an `<ol>` and `</ol>` like so:
 
 ![List displayed as ordered list unindented]( https://curriculum-content.s3.amazonaws.com/web-development/experiencing-html-lab/wrapping_song_li_in_ol.png)
 
-
 Which displays:
 
 ![List displayed as ordered list](https://curriculum-content.s3.amazonaws.com/web-development/experiencing-html-lab/ordered_list.png)
@@ -294,7 +293,7 @@ recipe, say). If `<ol>` means **o**rdered **l**ist, `<ul>` means **u**nordered
 Here we return to a "bulleted" unordered list. This is the same as when we
 first started and had no `<ul>` tags. Recall, browsers often guess what you
 meant when they notice something missing. In this case, most browsers, if they
-see an empty `<li>` outside of a `<ul>` or an `<ol>` will add one.
+see an empty `<li>` outside of a `<ul>` or an `<ol>`, will add a bullet.
 
 ### Add a Description Paragraph
 
@@ -367,7 +366,7 @@ Here's the full code:
 This is, essentially, the work of learning to write HTML. You will grow more
 familiar with tags, what they do, and how they display in a browser. You will
 then "mark your content up" so that browsers know how to present your content
-properly. Eventually you will use information like `class` and `id` to add
+properly. Eventually, you will use information like `class` and `id` to add
 specific style and presentation behavior to items of the class type or bearing
 the unique `id`entifier.
 
@@ -375,25 +374,25 @@ Every web page: Netflix, Facebook, Twitter, Google, The NRC Handelsblad, Le
 Monde &mdash; _every single one uses the standard that **you** just worked with
 to inform and change lives every day_. Welcome to the club!
 
-When you're done, click on the **Terminal** of LearnIDE, and type `learn`
-and verify that your tests pass. Make sure that you have your HTML 
+When you're done, click on the **Terminal** of the Learn IDE, and type `learn`
+and verify that your tests pass. Make sure that you have your HTML
 content in a file called `my_list.html` in order to pass the check.
 
-Then run the command `learn submit`. This will log your progress to our
+Once you've passed the test, run the command `learn submit`. This will log your progress to our
 systems. If everything's gone well, you'll be ready to move on to the
 next lesson!
 
 ## Conclusion
 
-In this lesson we saw that by editing a plain text file and augmenting
+In this lesson, we saw that by editing a plain text file and augmenting
 plaintext content with special "markup" characters we create provide HTML
 documents.
 
 HTML reading programs ("browsers") interpret the source HTML file and create a
 "rendered" version of the page.
 
-In subsequent lessons we will learn additional tags which provide us an
+In subsequent lessons, we will learn additional tags which provide us an
 ever-richer ability to describe how to present our content.  We might be
 starting with paragraphs today, but soon we'll be including video, creating
 multi-column layouts, and ensuring our sites work equally well on a web-enabled
-refrigerator as well as smartphone.
+refrigerator as well as smartphones.
