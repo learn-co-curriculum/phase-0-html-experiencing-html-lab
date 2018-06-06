@@ -142,7 +142,12 @@ E. "Girlfriend In a Coma"
 
 Yet again, there's nothing in the content itself that communicates what it
 represents. To experience this pain keenly, let's try asking a computer what it
-thinks. In the Learn IDE, click on the **Terminal** window and type `httpserver`.
+thinks. In the Learn IDE, click on the **terminal** window and type `httpserver`.
+
+The `httpserver` program will start up. When you want to quit `httpserver` press
+`Control + c` to end the program. If you want to try it out now, go ahead. Just
+remember to start `httpserver` back up again!
+
 You'll be given a web site address.
 
 For example:
@@ -374,13 +379,16 @@ Every web page: Netflix, Facebook, Twitter, Google, The NRC Handelsblad, Le
 Monde &mdash; _every single one uses the standard that **you** just worked with
 to inform and change lives every day_. Welcome to the club!
 
-When you're done, click on the **Terminal** of the Learn IDE, and type `learn`
-and verify that your tests pass. Make sure that you have your HTML
-content in a file called `my_list.html` in order to pass the check.
+When you're done, click on the **terminal** of the Learn IDE. Your `httpserver`
+program should may still be running there. To exit `httpserver` press
+`Control + c`. This will tell `httpserver` to shut down and you should be back
+at the prompt. Type `learn` and verify that your tests pass.
 
-Once you've passed the test, run the command `learn submit`. This will log your progress to our
-systems. If everything's gone well, you'll be ready to move on to the
-next lesson!
+Make sure that you have your HTML content in a file called `my_list.html`
+in order to pass the check.
+
+Once you've passed the test, run the command `learn submit`. This will log your
+progress to our systems. You're ready to move on to the next lesson!
 
 ## Conclusion
 
