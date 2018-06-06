@@ -2,80 +2,38 @@
 
 ## Problem Statement
 
-How do we go about writing text that is designed for viewing on the web? How
-does that differ from the text that we might write into a plain text file?
-We're going to explore how these things differ in this lab. We're also going to
-dabble with one of the most important philosophical questions ever asked by
-humans: _How do arrangements of symbols gain meaning_. So we're going to dabble
-with the bases of human experience and learn to write HTML! Not bad for a
-lesson!
+How do we go about writing text for the web? How is that different from the
+text that we write in a text file?  We're going to experience for ourselves how
+these things are different in this lab.
 
-With such lofty heights in our sights, this lab is a bit long. Don't lose
-heart, this lab is here to help you get the big picture. If you find you're
-confused, ask for help or talk to a friend.
+You don't need any prior knowledge of HTML for this lab. We're going to tell
+you what to type. Don't focus on specific commands or taking notes. Everything
+will be covered thoroughly later. Instead, the goal of this exercise is to feel
+the joy of editing a file and seeing the change "out there."
 
 ## Objectives
 
-1. Discern between text that is designated as _markup_ versus _content_
-2. Recognize the difference between source text and text as viewed in a browser
-3. Use HTML tags, without prior experience, to change the display of _content_
-   by providing _markup_
-4. Discover common idioms and terms used by HTML producers
+1. Compare between text that is designated as _markup_ versus _content_
+2. Define the difference between _source text_ and _rendered text_
+3. Use HTML tags to change the display of _content_ by providing _markup_
 
-## Discern Between Text That Is Designated As _markup_ Versus _content_
+**NOTE:** We don't expect you to know _markup_, _content_, _source text_, or
+_rendered text_ yet. We'll be defining them in this lab.
+
+## Compare Between Text That Is Designated As _markup_ Versus _content_
+
+### Create a Text File With A List
 
 Launch the Learn IDE (use the Open IDE button) and create a new file called
-`my_list.txt`. Your file extension suggests that the content will be (plain-)
-text.
+`my_list.txt`. The file extension suggests to humans and operating systems
+that it contains text.
 
 Think of a collection of things united by theme: Pok&eacute;mon, Old-school
 MC's, Prime Ministers of New Zealand, Magical Beasts and Where to Find Them,
-etc...
+etc.
 
-Now write in a few entries in your file. Here's one from us (highly-influenced
-by English post-punk music).
-
-```text
-Love Will Tear Us Apart
-Bela Lugosi's Dead
-A Forest
-Nine While Nine
-Girlfriend In a Coma
-```
-
-We would call this the _content_ of the file. It's the thing we're trying to
-communicate.
-
-### Content versus Representation
-
-Let's investigate the nature of _content_ more deeply and ask: "What does this
-_content_ represent?" That is, what is the author's intention with this
-content? The author, and most readers, know that the _intention_ of this
-_content_ is to communicate a list of things. But what _in this content itself_
-communicates that this represents a list? The answer might surprise you.
-
-Nothing. Nothing in the _content_ itself communicates what the _content_
-signifies.
-
-In order to translate a few words, a few more words on a new line, a few
-words on a new line, etc. into a "list" it requires that you have in your mind
-the _cultural precept_ known as a "list." You infer list-ness when you see
-words stacked together vertically with very little horizontal content.
-
-Similarly if you have a certain _cultural precept_ and familiarity with English
-post-punk / Goth music you _might_ recognize that the list items constitute
-songs by Joy Division, Bauhaus, The Cure, The Sisters of Mercy, and the Smiths,
-respectively. Nevertheless, it's your _cultural_ knowledge, or lack thereof,
-that makes this "a list of songs" or a list of "very strange word soup items."
-
-The essential fact is that there is nothing in this content itself that
-represents what the content is that exists independently of your cultural
-precepts or lack thereof.
-
-Whoa.
-
-We might suppose that we could more clearly communicate that the lines refer to
-names of songs by wrapping each line in quotation (`"`) marks like so:
+Now write in a few of these in your file. Here's one from us (songs in the
+English post-punk genre).
 
 ```text
 "Love Will Tear Us Apart"
@@ -85,263 +43,195 @@ names of songs by wrapping each line in quotation (`"`) marks like so:
 "Girlfriend In a Coma"
 ```
 
-Amazingly this is _another_ cultural precept ("punctuation") which appeals to
-another precept ("entitling of works of art").
+The material we typed into the file is called the _content_.  It's the thing
+we're trying to communicate.
 
-This leads to a challenging question: How can we share information about what
-arrangements of text means with a computer &mdash; a thing that has _absolutely
-no possible culture to help it infer our intentions_?
+### Content as a List in a Text File
 
-### Denoting Lists
+A problem with our _content_ is that it doesn't explicitly state anywhere that
+it's a list.  In the example, *you* see a list of songs. *we* see a list of
+songs. But a browser doesn't know what a "list" is. 
 
-Try updating your `my_list.txt` file in some way that suggests, a bit more
-clearly that you're working with a list. Discuss it with a friend, if you have
-one handy. Talk about how your _culture_ is helping you see the list-ness or
-book-title-ness.
+We need to help browser **know**  what a list is. The secret is to add "notes"
+or "breadcrumbs" to the content that tell the browser that it has list items
+and that these items "go together" in a list.  To add these "notes" we surround
+the _content_ with bits of _markup_, with bits of HTML. 
 
-### List Representations
+We will take the text content from our text file, paste it into a new HTML file
+and then we will add _markup_ so that a browser "sees" a list.  Let's write an
+HTML file!
 
-Some might have made their content a list by making it look like:
+### Text Inside an HTML File
 
-```text
-* "Love Will Tear Us Apart"
-* "Bela Lugosi's Dead"
-* "A Forest"
-* "Nine While Nine"
-* "Girlfriend In a Coma"
-```
+We're going to create an HTML list together.
 
-...or maybe...
+1. Create a new file called `my_list.html`
+2. Copy the contents of `my_list.txt` and paste them into `my_list.html`
+3. Use `command + s` to save the `my_list.html` file
+4. In the Learn IDE, click on the **terminal** window and type `httpserver`.
+5. Hit enter to run the command
 
-```text
-1. "Love Will Tear Us Apart"
-2. "Bela Lugosi's Dead"
-3. "A Forest"
-4. "Nine While Nine"
-5. "Girlfriend In a Coma"
-```
-...or maybe...
+The `httpserver` program will start up. This is a program that publishes your
+HTML files on the internet. When you want to quit `httpserver`, press `Control + c`
+to end the program. If you want to try it out now, go ahead. Just remember
+to start `httpserver` back up again!
 
-```text
-A. "Love Will Tear Us Apart"
-B. "Bela Lugosi's Dead"
-C. "A Forest"
-D. "Nine While Nine"
-E. "Girlfriend In a Coma"
-```
-
-...or maybe for someone marking completion through a list...
-
-```text
-[ ] "Love Will Tear Us Apart"
-[X] "Bela Lugosi's Dead"
-[ ] "A Forest"
-[ ] "Nine While Nine"
-[ ] "Girlfriend In a Coma"
-```
-
-Yet again, there's nothing in the content itself that communicates what it
-represents. To experience this pain keenly, let's try asking a computer what it
-thinks. In the Learn IDE, click on the **terminal** window and type `httpserver`.
-
-The `httpserver` program will start up. When you want to quit `httpserver` press
-`Control + c` to end the program. If you want to try it out now, go ahead. Just
-remember to start `httpserver` back up again!
-
-You'll be given a web site address.
-
-For example:
+When `httpserver` starts, you'll be given a web site address.
 
 ![Starting the webserver](https://curriculum-content.s3.amazonaws.com/web-development/experiencing-html-lab/launched_web_server.png)
 
-This output says:
+`httpserver` says:
 
 `Your server is running at 67.205.152.27:59976`
 
 Open up another browser tab, paste that web site address and add
-`/my_list.txt`. So I'll be visiting `http://67.205.152.27:59976/my_list.txt`.
+`/my_list.txt`. So in this example, I'll be visiting
+`http://67.205.152.27:59976/my_list.txt`. **We will call this tab "the viewing
+tab."**
 
 We see:
 
-![Plaintext list rendered by the browser](https://curriculum-content.s3.amazonaws.com/web-development/experiencing-html-lab/plaintext_list_browser_rendered.png)
+![HTML file with non-marked-up content displays on one line](https://curriculum-content.s3.amazonaws.com/web-development/intro-the-shell/non_marked_up_list.png)
 
-Essentially we see the same plain-text in the browser as the same plain-text
-file that we wrote. The browser doesn't really know that it's got a list and it
-doesn't know that it's got songs either. Still, our problem remains that we
-_humans_ know what a list looks like thanks to _culture_; aliens, individuals
-from remote island tribes who haven't been calibrated to that culture _cannot
-find the meaning of the structure_. The same is true of **computers**.
+As noted above, the browser doesn't know that items on new lines means "items
+in a list." Browsers ignore when HTML has is split onto new lines. We cover why
+a little later in this README. Since the browser doesn't know we intend this to
+be a list **and** since browsers ignore when _content_ is split onto different
+lines, it displays all the _content_ on one line. Not what we wanted.
 
-Let's enrich our file to contain not only this **content** but also to contain
-information about _meaning_ as well as information about _presentation_ in this
-document. We can do this by adding additional information called **markup** to
-the document.
+### A Text Not-Really-A-List Into a Real-HTML-List
 
-> An HTML "file" or "document" is a plaintext file which contains **content** as
-> well as **markup** information.
+> **REMEMBER**: This lab will provide you what to type. Subsequent labs will
+> deeply examine details of HTML markup. However, our goal here is to show how
+> slight changes to markup can dramatically alter the browser's display of
+> content. If you're fuzzy on a detail that's fine.
 
-The **markup** text provides information about the _meaning_ of a plaintext line
-("it's a list item", "it's a header"). Some HTML authors use the Greek word for
-"meaning" and call that "semantic markup." You can use that too, if you like.
+#### Marking-Up List Items
 
-The **markup** provides guidance on how to display certain bits of content
-("Paragraphs should have 15 pixels between them," "The header should use a font
-size that's 3-times the standard system font-size"). That markup is called
-_presentational_ markup because it's about the typographic / graphic
-_presentation_ of the content.
+OK, we've reached the critical moment. We're going to tell the browser that
+these bits of letters represent **list items**. To do so we "wrap" each line
+with `<li>` and `</li>`. For example: `<li>"A Forest"</li>`
 
-Let's augment our list by transforming it an `.html` file where we can add
-**markup** directives on how to _present_ our content and describe the
-_meaning_ of some of the content elements.
+```html
+<li>"Love Will Tear Us Apart"</li>
+<li>"Bela Lugosi's Dead"</li>
+<li>"A Forest"</li>
+<li>"Nine While Nine"</li>
+<li>"Girlfriend In a Coma"</li>
+```
 
-## Plaintext to HTML
-
-1. Create a new file called `my_list.html`
-2. Copy the contents of `my_list.txt` and paste them into `my_list.html`
-3. Update your browser to view `my_list.html`
-
-![Plaintext file as HTML](https://curriculum-content.s3.amazonaws.com/web-development/experiencing-html-lab/plaintext_list_as_html.png)
-
-Here we see what a browser, ignorant of our _culture_ makes of our plaintext
-file. It doesn't know how to find _meaning_ or how to interpret the _semantic_
-purpose of our `my_list.html` file. Let's help it.
-
-## Adding HTML
-
-This lab will provide you what to type. Subsequent labs will deeply examine
-details of HTML markup. However, our goal here is to show how slight changes to
-markup can dramatically alter the browser's presentation of content. If you're
-fuzzy on a detail that's fine. Make a note of a question, but don't get scared.
-Nothing's going to break and you might learn something amazing.
-
-### Denoting List Items
-
-1. Determine what "class" of thing each list item is. Is it a `grocery` or a
-   `dairy-item`, a `president`, or `ruminant-quadruped`? We'll call this the
-   _class name_.
-2. Wrap each line with `<li class="class name">` and `</li>`. For example: `<li
-   class="class name">"A Forest"</li>`
-
-![Plaintext file as HTML](https://curriculum-content.s3.amazonaws.com/web-development/experiencing-html-lab/marking_up_song_list_items.png)
-
-Flip back to your browser tab and refresh (make sure your `httpserver` program
+Flip back to the **viewing tab** and refresh (make sure your `httpserver` program
 is still running!). You should see something like the following:
 
 ![Songlist](https://curriculum-content.s3.amazonaws.com/web-development/experiencing-html-lab/ul_song_list.png)
 
-Suddenly the browser has learned a bit about our _culture_! When we say `<li>`,
-we're saying, "Browser, this is a **list item** make this look like your
-understanding of lists!"
+**AWESOME**.
 
-While your HTML file _has not changed_ its _interpretation_ by the browser, the
-intermingling of _content_ with _markup_ produces something richer than mere
-plaintext display.
+In this step we added some HTML _markup_:
 
-We've _also_ provided a hint to the browser that each of these list items
-documents a thing. We specify the thing by adding an _attribute_ called `class`
-and specifying that a given list item's `class` is "song."
+* The `<li>` is an HTML **list item**  _opening tag_
+* The `</li>` `li` list item  _closing tag_
+* We would call this pair of opening and closing tags"an `li` tag"
+* The whole length of text of _opening markup_ plus "wrapped" content plus
+  _closing markup_ (`<li>...content...</li>`) is called "an HTML element;" or,
+  more specifically, an `li element`
 
-Despite knowing that all our list items are items of the `song` "class," the
-browser doesn't do anything special with that knowledge (yet). This is a
-hallmark of how browsers behave: if they can't find anything special to do,
-they try to provide a pretty-decent experience.
+Again, you don't need to memorize these terms yet, but we want to help you
+develop an intuition for how these words are used. You will be using these
+terms when speaking with other developers and HTML authors.
 
-### Denoting Ordered Lists
+It may not seem like we did much work, but this realization of a method for
+"marking up" _content_ and linking it is the foundation of the web. It's what
+made Tim Berners-Lee's reputation. And **you** just experienced Sir Tim's great
+insight. **AWESOME**.
 
-Something that our _culture_ tells us is that "list items belong to a collective."
-Seeing "milk, eggs, cheese" suggests "Grocery List" or "John, Paul, George, and
-Ringo" suggests "Beatles Members." Let's tell browsers that our list items all
-fit together as an "ordered list" &mdash; a list with each list item being
-marked by a sequentially increasing number.
+Let's work with additional HTML tags to see how we tweak our HTML a bit more.
+Let's tell the browser "Hey! These list items, they go together?"
+
+### Saying List Items Go Together
 
 Wrap the entire set of `<li>` items with an `<ol>` and `</ol>` like so:
 
-![List displayed as ordered list unindented]( https://curriculum-content.s3.amazonaws.com/web-development/experiencing-html-lab/wrapping_song_li_in_ol.png)
+```html
+<ol>
+<li>"Love Will Tear Us Apart"</li>
+<li>"Bela Lugosi's Dead"</li>
+<li>"A Forest"</li>
+<li>"Nine While Nine"</li>
+<li>"Girlfriend In a Coma"</li>
+</ol>
+```
 
-Which displays:
+Save the file and refresh the **viewing tab**. It should display:
 
 ![List displayed as ordered list](https://curriculum-content.s3.amazonaws.com/web-development/experiencing-html-lab/ordered_list.png)
 
+We told the browser that this set of list items that we "wrapped" in the
+**ordered list** tag go together **as a list**. Because we told the browser
+that the list is **ordered** it decided to be helpful and put numbers next to
+the list items _for us_.
+
 ### Wrapping and Indentation
 
-You might have noticed a pattern, HTML is the successive _wrapping_ of
-_content_ in HTML "tags" which constitue the _markup_ of the document.
+With all these angle-brackets of _markup_ and _content_ mixed together, HTML
+authors like to use indentation to make HTML easier to read. Here's how most
+HTML authors would expect our code from the previous section to be arranged:
 
-You've also just seen that tags can "nest". In our case, the `<li>` tagged
-materials, or "elements," are nested within the `<ol>` "element." To make
-things more readable, we indent contained tags in their container. In this
-case, most HTML authors would expect our code to look like this:
+```html
+<ol>
+  <li>"Love Will Tear Us Apart"</li>
+  <li>"Bela Lugosi's Dead"</li>
+  <li>"A Forest"</li>
+  <li>"Nine While Nine"</li>
+  <li>"Girlfriend In a Coma"</li>
+</ol>
+```
 
-![List with ordered list indented](https://curriculum-content.s3.amazonaws.com/web-development/experiencing-html-lab/wrapped_ol_songlist.png)
+Update your document. Save it and refresh your **viewing tab**.
 
-Adjust your document as appropriate. When you view this indented text in the
-browser, _you should see no change_. While indentation and separated lines
-("whitespace") have meaning in the _culture_ of humans, they don't have any
-such significance in HTML.
-
-In fact, because of browsers' indifference to whitespace, it's _possible_ **but
-certainly against all custom of HTML authors** to write this same HTML file as:
-
-![Whitespace innocence](https://curriculum-content.s3.amazonaws.com/web-development/experiencing-html-lab/whitespace_insensitivity.png)
-
-While this certainly _works_, it breaks the standards HTML authors expect.
+Remember earlier when noticed browsers ignored _content_ when it was on
+separate lines? Cleaning up your code requires splitting lines, adding spaces,
+and adding tabs. Browser ignore those characters that _humans_ use to make
+their HTML reader-friendly.
 
 ### Ordered to Unordered
 
-Let's change our ordered list to be unordered. We might not care that the items
-are in order (songs) but might care very much if the order was important (a
-recipe, say). If `<ol>` means **o**rdered **l**ist, `<ul>` means **u**nordered
-**l**ist...
+Let's change our ordered list to be **unordered**. If `<ol>` means **ordered
+list**, you might guess that `<ul>` means **unordered list**. Make the change
+and refresh your **viewing tab**.
 
 ![Back to Unordered List](https://curriculum-content.s3.amazonaws.com/web-development/experiencing-html-lab/unordered_list.png)
 
-Here we return to a "bulleted" unordered list. This is the same as when we
-first started and had no `<ul>` tags. Recall, browsers often guess what you
-meant when they notice something missing. In this case, most browsers, if they
-see an empty `<li>` outside of a `<ul>` or an `<ol>`, will add a bullet.
+Here we return to a "bulleted" unordered list.
+
+> **ASIDE**: If you've been following along closely, you  might be wondering, if
+> we didn't have a `<ul>` tag around our `<li>` items earlier, how did the
+> browser know how treat those `<li>` as if they were in a `<ul>`? When browsers
+> detect problematic HTML they guess! This can lead to some very strange results
+> when you make an error, but if you write _invalid_ HTML, they try to recover.
+> HTML validity will be discussed further soon!
 
 ### Add a Description Paragraph
 
 Let's introduce our list by adding some introductory content:
 
 ```html
-Some of my favorite post-punk and Goth songs!
+<p>Some of my favorite post-punk and Goth songs!</p>
 <ul>
-  <li class="song">"Love Will Tear Us Apart"</li>
-  <li class="song">"Bela Lugosi's Dead"</li>
-  <li class="song">"A Forest"</li>
-  <li class="song">"Nine While Nine"</li>
-  <li class="song">"Girlfriend In a Coma"</li>
+  <li>"Love Will Tear Us Apart"</li>
+  <li>"Bela Lugosi's Dead"</li>
+  <li>"A Forest"</li>
+  <li>"Nine While Nine"</li>
+  <li>"Girlfriend In a Coma"</li>
 </ul>
 ```
 
-Flip back to the browser and see what the result is. What the browser displays
-is often called "the rendered page" because it's an interpretation (or
-browser's "rendering") of the source material (the HTML). So, looking at "the
-rendered page," we see that the browser did something pretty sensible, it
-guessed that we meant to have this content in a separate paragraph. Let's be
-explicit and wrap the paragraph in the `<p>` tag set. Much like `class`, let's
-add an `id` "attribute" that helps tell what the `<p>` is about.
-
-```html
-<p id="description">Some of my favorite post-punk and Goth songs!</p>
-<ul>
-  <li class="song">"Love Will Tear Us Apart"</li>
-  <li class="song">"Bela Lugosi's Dead"</li>
-  <li class="song">"A Forest"</li>
-  <li class="song">"Nine While Nine"</li>
-  <li class="song">"Girlfriend In a Coma"</li>
-</ul>
-```
-
-While we might have multiple instances of a class member (many `songs`) there's
-only one `description` paragraph. Take a look at your "rendered page" and make
-sure it makes sense.
+Take a look at your "rendered page" and verify the result is to your liking.
 
 ### Put a Header on It
 
-Lastly, let's put a "heading" or a "title" on the top of our document. Add a
-title and "wrap" it with an `<h1> .... </h1>` tag. Here's our example again:
+Lastly, let's put a "heading" on the top of our document. Add a `h1` element
+with an appropriate title inside.
 
 `<h1>My Music List</h1>`
 
@@ -349,58 +239,48 @@ title and "wrap" it with an `<h1> .... </h1>` tag. Here's our example again:
 
 Admire your finished work!
 
-Here's the full code:
-
+Here's the full example code:
 
 ```html
 <h1>My Music List</h1>
-<p id="description">Some of my favorite post-punk and Goth songs!</p>
+<p>Some of my favorite post-punk and Goth songs!</p>
 <ul>
-  <li class="song">"Love Will Tear Us Apart"</li>
-  <li class="song">"Bela Lugosi's Dead"</li>
-  <li class="song">"A Forest"</li>
-  <li class="song">"Nine While Nine"</li>
-  <li class="song">"Girlfriend In a Coma"</li>
+  <li>"Love Will Tear Us Apart"</li>
+  <li>"Bela Lugosi's Dead"</li>
+  <li>"A Forest"</li>
+  <li>"Nine While Nine"</li>
+  <li>"Girlfriend In a Coma"</li>
 </ul>
 ```
 
 ![Final Document](https://curriculum-content.s3.amazonaws.com/web-development/experiencing-html-lab/final_header_paragraph_ul.png)
 
-### Epilogue
+## Conclusion
 
-This is, essentially, the work of learning to write HTML. You will grow more
-familiar with tags, what they do, and how they display in a browser. You will
-then "mark your content up" so that browsers know how to present your content
-properly. Eventually, you will use information like `class` and `id` to add
-specific style and presentation behavior to items of the class type or bearing
-the unique `id`entifier.
-
-Every web page: Netflix, Facebook, Twitter, Google, The NRC Handelsblad, Le
-Monde &mdash; _every single one uses the standard that **you** just worked with
-to inform and change lives every day_. Welcome to the club!
+### Cool-Down
 
 When you're done, click on the **terminal** of the Learn IDE. Your `httpserver`
-program should may still be running there. To exit `httpserver` press
-`Control + c`. This will tell `httpserver` to shut down and you should be back
-at the prompt. Type `learn` and verify that your tests pass.
+program should still be running there. To exit `httpserver` press `Control +
+c`. This will tell `httpserver` to shut down and you should be back at the
+prompt. 
 
-Make sure that you have your HTML content in a file called `my_list.html`
-in order to pass the check.
+Make sure that you have your HTML content in a file called `my_list.html` in
+order to pass the check. Type `learn` and verify that your tests pass.
 
 Once you've passed the test, run the command `learn submit`. This will log your
 progress to our systems. You're ready to move on to the next lesson!
 
-## Conclusion
+### Retrospective
 
-In this lesson, we saw that by editing a plain text file and augmenting
-plaintext content with special "markup" characters we create provide HTML
-documents.
+In this lab, you have, essentially, done the job of being an HTML author. You
+receive raw _content_, you _mark it up_ to create _source text_. You test,
+tweak, and adjust your _source text_ until the _rendered text_ displayed in the
+browser is to your
+liking. 
 
-HTML reading programs ("browsers") interpret the source HTML file and create a
-"rendered" version of the page.
+In upcoming lessons, we will learn additional tags which provide us an more
+ways to describe  our content.  We might be starting with lists today, but soon
+we'll be including video, creating multi-column layouts, and ensuring our sites
+work equally well on a web-enabled refrigerator as well as smartphones.
 
-In subsequent lessons, we will learn additional tags which provide us an
-ever-richer ability to describe how to present our content.  We might be
-starting with paragraphs today, but soon we'll be including video, creating
-multi-column layouts, and ensuring our sites work equally well on a web-enabled
-refrigerator as well as smartphones.
+Welcome to the community of web page creators!
