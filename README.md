@@ -103,8 +103,8 @@ lines, it displays all the _content_ on one line. Not what we wanted.
 
 > **REMEMBER**: This lab will provide you what to type. Subsequent labs will
 > deeply examine details of HTML markup. However, our goal here is to show how
-> slight changes to markup can dramatically alter the browser's display of
-> content. If you're fuzzy on a detail that's fine.
+> slight changes to markup can quickly alter the browser's display of content.
+> If you're fuzzy on a detail that's fine.
 
 #### Marking-Up List Items
 
@@ -134,16 +134,16 @@ In this step we added some HTML _markup_:
 * We would call this pair of opening and closing tags"an `li` tag"
 * The whole length of text of _opening markup_ plus "wrapped" content plus
   _closing markup_ (`<li>...content...</li>`) is called "an HTML element;" or,
-  more specifically, an `li element`
+  more exactly, an `li element`
 
 Again, you don't need to memorize these terms yet, but we want to help you
 develop an intuition for how these words are used. You will be using these
 terms when speaking with other developers and HTML authors.
 
-It may not seem like we did much work, but this realization of a method for
-"marking up" _content_ and linking it is the foundation of the web. It's what
-made Tim Berners-Lee's reputation. And **you** just experienced Sir Tim's great
-insight. **AWESOME**.
+It may not seem like we did much work, but idea of a method for "marking up"
+_content_ and linking it is the foundation of the web. It's what made Tim
+Berners-Lee's reputation. And **you** just experienced Sir Tim's great insight.
+**AWESOME**.
 
 Let's work with additional HTML tags to see how we tweak our HTML a bit more.
 Let's tell the browser "Hey! These list items, they go together?"
@@ -213,7 +213,7 @@ Here we return to a "bulleted" unordered list.
 
 ### Add a Description Paragraph
 
-Let's introduce our list by adding some introductory content:
+Let's introduce our list by adding some background:
 
 ```html
 <p>Some of my favorite post-punk and Goth songs!</p>
@@ -270,7 +270,7 @@ order to pass the check. Type `learn` and verify that your tests pass.
 Once you've passed the test, run the command `learn submit`. This will log your
 progress to our systems. You're ready to move on to the next lesson!
 
-### Retrospective
+### Looking Back
 
 In this lab, you have, essentially, done the job of being an HTML author. You
 receive raw _content_, you _mark it up_ to create _source text_. You test,
@@ -279,8 +279,7 @@ browser is to your
 liking. 
 
 In upcoming lessons, we will learn additional tags which provide us an more
-ways to describe  our content.  We might be starting with lists today, but soon
-we'll be including video, creating multi-column layouts, and ensuring our sites
-work equally well on a web-enabled refrigerator as well as smartphones.
+ways to describe our content.  We might be starting with lists today, but soon
+we'll be on this in exciting ways!
 
 Welcome to the community of web page creators!
