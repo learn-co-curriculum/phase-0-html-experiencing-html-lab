@@ -78,7 +78,7 @@ to start `httpserver` back up again!
 
 When `httpserver` starts, you'll be given a web site address.
 
-![Starting the webserver](https://curriculum-content.s3.amazonaws.com/web-development/experiencing-html-lab/launched_web_server.png)
+![Starting the web server](https://curriculum-content.s3.amazonaws.com/web-development/experiencing-html-lab/launched_web_server.png)
 
 `httpserver` says:
 
