@@ -13,14 +13,14 @@ the joy of editing a file and seeing the change "out there."
 
 ## Objectives
 
-1. Compare between text that is designated as _markup_ versus _content_
+1. Distinguish _markup_ from _content_
 2. Define the difference between _source text_ and _rendered text_
 3. Use HTML tags to change the display of _content_ by providing _markup_
 
 **NOTE:** We don't expect you to know _markup_, _content_, _source text_, or
 _rendered text_ yet. We'll be defining them in this lab.
 
-## Compare Between Text That Is Designated As _markup_ Versus _content_
+## Distinguish _markup_ from _content_
 
 ### Create a Text File With A List
 
