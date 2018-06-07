@@ -146,7 +146,7 @@ Berners-Lee's reputation. And **you** just experienced Sir Tim's great insight.
 **AWESOME**.
 
 Let's work with additional HTML tags to see how we tweak our HTML a bit more.
-Let's tell the browser "Hey! These list items, they go together?"
+Let's tell the browser "Hey! These list items, they go together!"
 
 ### Saying List Items Go Together
 
