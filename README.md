@@ -84,10 +84,10 @@ When `httpserver` starts, you'll be given a web site address.
 
 `Your server is running at 67.205.152.27:59976`
 
-Open up another browser tab, paste that web site address and add
-`/my_list.txt`. So in this example, I'll be visiting
-`http://67.205.152.27:59976/my_list.txt`. **We will call this tab "the viewing
-tab."**
+Open up another browser tab, paste that web site address and add the file I wish
+to view after a `/`. We want to view `/my_list.html`, so in my example, I'll be
+visiting `http://67.205.152.27:59976/my_list.html`. **We will call this tab "the
+viewing tab."**
 
 We see:
 
