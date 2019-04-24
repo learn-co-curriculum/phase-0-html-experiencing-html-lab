@@ -128,8 +128,8 @@ is still running!). You should see something like the following:
 
 In this step we added some HTML _markup_:
 
-* The `<li>` is an HTML **list item**  _opening tag_
-* The `</li>` `li` list item  _closing tag_
+* The `<li>` is an HTML **list item** _opening tag_
+* The `</li>` is an HTML _closing tag_
 * We would call this pair of opening and closing tags"an `li` tag"
 * The whole length of text of _opening markup_ plus "wrapped" content plus
   _closing markup_ (`<li>...content...</li>`) is called "an HTML element;" or,
