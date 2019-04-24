@@ -49,8 +49,7 @@ we're trying to communicate.
 ### Content as a List in a Text File
 
 A problem with our _content_ is that it doesn't explicitly state anywhere that
-it's a list.  In the example, *you* see a list of songs. *we* see a list of
-songs. But a browser doesn't know what a "list" is. 
+it's a list.  In the example, we see a list of songs. But a browser doesn't know what a "list" is. 
 
 We need to help browser **know**  what a list is. The secret is to add "notes"
 or "breadcrumbs" to the content that tell the browser that it has list items
