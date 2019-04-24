@@ -66,7 +66,7 @@ We're going to create an HTML list together.
 
 1. Create a new file called `my_list.html`
 2. Copy the contents of `my_list.txt` and paste them into `my_list.html`
-3. Use `command + s` to save the `my_list.html` file
+3. Save the `my_list.html` file
 4. In the Learn IDE, click on the **terminal** window and type `httpserver`.
 5. Hit enter to run the command
 
@@ -82,6 +82,8 @@ When `httpserver` starts, you'll be given a web site address.
 `httpserver` says:
 
 `Your server is running at 67.205.152.27:59976`
+
+> **ASIDE**: For our example, our server is running at 67.205.152.27:59976 but keep in mind that yours could be different.
 
 Open up another browser tab, paste that web site address and add the file I wish
 to view after a `/`. We want to view `my_list.html`, so in my example, I'll be
