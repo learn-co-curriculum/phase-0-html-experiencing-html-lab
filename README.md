@@ -93,7 +93,9 @@ Now we're going to create an HTML list together.
 1. Create a new file called `my_list.html`
 2. Copy the contents of `my_list.txt` and paste them into `my_list.html`
 3. Save the `my_list.html` file
-4. Open the `my_list.html` file with `open my_list.html`
+4. Open the `my_list.html` file. For Mac users, you can do this with `open my_list.html`. 
+   For Windows users, you can do this in your Ubuntu app with `explorer.exe index.html`. Make
+   sure you've [set Chrome as your default browser](https://support.google.com/chrome/answer/95417?co=GENIE.Platform%3DDesktop&hl=en).
 5. Hit enter to run the command
 
 > **Note:** If you are using the AWS Cloud9 IDE, the process for opening HTML files
