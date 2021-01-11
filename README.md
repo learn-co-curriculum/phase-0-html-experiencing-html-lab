@@ -19,6 +19,29 @@ the joy of editing a file and seeing the change "out there."
 **NOTE:** We don't expect you to know _markup_, _content_, _source text_, or
 _rendered text_ yet. We'll be defining them in this lab.
 
+## Getting Started
+
+If you haven't already, fork and clone this lesson into your local environment.
+
+> **Quick Review:** To fork this lab, click the **Fork** icon in the upper
+> right of this page. This will bring you to GitHub. You may be prompted to
+> choose where to fork - choose your personal GitHub account. 
+> 
+> Once your fork is created, click the **Code** button in GitHub, choose
+> **SSH** and copy the provided git URL info. 
+> 
+> Clone to your local machine with `git clone` followed by the git URL you
+> copied. This will create a folder in the location you'er currently in containing
+> your fork of this lab's repository.
+
+Navigate into the newly createtd directory in the terminal, then run `code .` to open the files
+in Visual Studio Code. (If you are using a different text editor, the command will be different.)
+Finally, run `bundle` to install the lab's dependencies.
+
+> **Note:** This lab's test use Ruby, so the commands we'll use are different than what you've
+> seen before - `npm install` and `npm test`. Here, we use `bundle` and `rspec` to do the same
+> things.
+
 ## Create an Unordered HTML List
 
 Think of a collection of things united by theme: Pok&eacute;mon, Old-school
@@ -28,9 +51,11 @@ with HTML.
 
 ### Create a Text File with Content
 
-Launch the Learn IDE (use the Open IDE button) and create a new file called
-`my_list.txt`. The file extension suggests to humans and operating systems
-that it contains text.
+In your terminal, choose a location to practice in and navigate to it. 
+
+Create a
+new file called `my_list.txt`. The file extension suggests to humans and operating
+systems that it contains text.
 
 Remember your collection of things? Now write in a few of them in your file.
 Here's an example from us (songs in the English post-punk genre).
@@ -68,28 +93,20 @@ Now we're going to create an HTML list together.
 1. Create a new file called `my_list.html`
 2. Copy the contents of `my_list.txt` and paste them into `my_list.html`
 3. Save the `my_list.html` file
-4. In the Learn IDE, click on the **terminal** window and type `httpserver`.
+4. Open the `my_list.html` file with `open my_list.html`
 5. Hit enter to run the command
 
-The `httpserver` program will start up. This is a program that publishes your
-HTML files on the internet. When you want to quit `httpserver`, press `Control + c`
-to end the program. If you want to try it out now, go ahead. Just remember
-to start `httpserver` back up again!
-
-When `httpserver` starts, you'll be given a web site address.
-
-![Starting the web server](https://curriculum-content.s3.amazonaws.com/web-development/experiencing-html-lab/launched_web_server.png)
-
-`httpserver` says:
-
-`Your server is running at 67.205.152.27:59976`
-
-> **ASIDE**: For our example, our server is running at 67.205.152.27:59976 but keep in mind that yours could be different.
-
-Open up another browser tab, paste that web site address and add the file I wish
-to view after a `/`. We want to view `my_list.html`, so in my example, I'll be
-visiting `http://67.205.152.27:59976/my_list.html`. **We will call this tab "the
-viewing tab."**
+> **Note:** If you are using the AWS Cloud9 IDE, the process for opening HTML files
+> is slightly different. In the lefthand file navigation, right click `my_list.html` 
+> (command + click for Mac users). In the context menu that appears, click the 
+> **Preview** option
+> 
+> ![aws preview](https://curriculum-content.s3.amazonaws.com/environment-setup/aws-preview-menu-option.png)
+> 
+> This will open the HTML page as a new tab in the IDE. You can also open this preview tab as a
+> separate browser tab by clicking the 'pop out' button in the upper right corner of the tab
+> 
+> ![pop out button](https://curriculum-content.s3.amazonaws.com/environment-setup/aws-pop-out-button.png)
 
 We see:
 
@@ -122,8 +139,7 @@ with `<li>` and `</li>`. For example: `<li>"A Forest"</li>`
 <li>"Girlfriend In a Coma"</li>
 ```
 
-Flip back to the **viewing tab** and refresh (make sure your `httpserver` program
-is still running!). You should see something like the following:
+Flip back to the **viewing tab** and refresh the page. You should see something like the following:
 
 ![Songlist](https://curriculum-content.s3.amazonaws.com/web-development/experiencing-html-lab/ul_song_list.png)
 
@@ -253,16 +269,9 @@ Here's the full example code:
 
 ![Final Document](https://curriculum-content.s3.amazonaws.com/web-development/experiencing-html-lab/final_header_paragraph_ul.png)
 
-When you're done, click on the **terminal** of the Learn IDE. Your `httpserver`
-program should still be running there. To exit `httpserver` press `Control +
-c`. This will tell `httpserver` to shut down and you should be back at the
-prompt. 
-
-Make sure that you have your HTML content in a file called `my_list.html` in
-order to pass the check. Type `learn` and verify that your tests pass.
-
-Once you've passed the test, run the command `learn submit`. This will log your
-progress to our systems. You're ready to move on to the next lesson!
+When you're done, it is time to run this assignment's tests. Make sure
+that you have your HTML content in a file called `my_list.html` in
+order to pass the check. Type `rspec` and verify that your tests pass.
 
 ## Conclusion
 
