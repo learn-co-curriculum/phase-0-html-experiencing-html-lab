@@ -31,10 +31,10 @@ If you haven't already, fork and clone this lesson into your local environment.
 > **SSH** and copy the provided git URL info. 
 > 
 > Clone to your local machine with `git clone` followed by the git URL you
-> copied. This will create a folder in the location you'er currently in containing
+> copied. This will create a folder in the location you're currently in containing
 > your fork of this lab's repository.
 
-Navigate into the newly createtd directory in the terminal, then run `code .` to open the files
+Navigate into the newly created directory in the terminal, then run `code .` to open the files
 in Visual Studio Code. (If you are using a different text editor, the command will be different. For the AWS Cloud9 IDE, for example, you must click on the file in the left navigation to open it)
 Finally, run `bundle` to install the lab's dependencies.
 
