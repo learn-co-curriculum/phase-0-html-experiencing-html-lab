@@ -254,7 +254,9 @@ Take a look at your "rendered page" and verify the result is to your liking.
 Lastly, let's put a "heading" on the top of our document. Add a `h1` element
 with an appropriate title inside.
 
-`<h1>My Music List</h1>`
+```html
+<h1>My Music List</h1>
+```
 
 Here's the full example code:
 
