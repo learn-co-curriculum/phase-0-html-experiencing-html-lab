@@ -55,7 +55,7 @@ In your terminal, choose a location to practice in and navigate to it.
 
 Create a
 new file called `my_list.txt`. The file extension suggests to humans and operating
-systems that it contains text.
+systems that it contains text. Open the file in VS Code by typing `code my_list.txt`.
 
 Remember your collection of things? Now write in a few of them in your file.
 Here's an example from us (songs in the English post-punk genre).
@@ -90,10 +90,10 @@ HTML file!
 
 Now we're going to create an HTML list together.
 
-1. Create a new file called `my_list.html`
+1. Create a new file called `my_list.html`. You can either do this in the terminal and then open it in VS Code, or create the file directly in VS Code.
 2. Copy the contents of `my_list.txt` and paste them into `my_list.html`
 3. Save the `my_list.html` file
-4. Open the `my_list.html` file. For Mac users, you can do this with `open my_list.html`. 
+4. Open the `my_list.html` file in the browser. For Mac users, you can do this with `open my_list.html`. 
    For Windows users, you can do this in your Ubuntu app with `explorer.exe index.html`. Make
    sure you've [set Chrome as your default browser](https://support.google.com/chrome/answer/95417?co=GENIE.Platform%3DDesktop&hl=en).
 5. Hit enter to run the command
