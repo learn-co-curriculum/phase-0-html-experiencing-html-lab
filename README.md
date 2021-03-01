@@ -23,24 +23,24 @@ _rendered text_ yet. We'll be defining them in this lab.
 
 If you haven't already, fork and clone this lesson into your local environment.
 
-> **Quick Review:** To fork this lab, click the **Fork** icon in the upper
-> right of this page. This will bring you to GitHub. You may be prompted to
-> choose where to fork - choose your personal GitHub account. 
-> 
-> Once your fork is created, click the **Code** button in GitHub, choose
-> **SSH** and copy the provided git URL info. 
-> 
-> Clone to your local machine with `git clone` followed by the git URL you
-> copied. This will create a folder in the location you're currently in containing
-> your fork of this lab's repository.
+**Quick Review:** To fork this lab: 
+
+1. click the **Fork** icon in the upper right of this page. This will bring you
+   to GitHub. You may be prompted to choose where to fork — choose your personal
+   GitHub account.
+2. Once your fork is created, click the **Code** button in GitHub, choose
+   **SSH** and copy the provided git URL info.
+3. Clone to your local machine with `git clone` followed by the git URL you
+   copied. This will create a folder in the location you're currently in
+   containing your fork of this lab's repository.
 
 Navigate into the newly created directory in the terminal, then run `code .` to open the files
 in Visual Studio Code. (If you are using a different text editor, the command will be different. For the AWS Cloud9 IDE, for example, you must click on the file in the left navigation to open it)
 Finally, run `bundle` to install the lab's dependencies.
 
-> **Note:** This lab's test use Ruby, so the commands we'll use are different than what you've
-> seen before - `npm install` and `npm test`. Here, we use `bundle` and `rspec` to do the same
-> things.
+**Note:** This lab's test use Ruby, so the commands we'll use are different than
+what you've seen before — `npm install` and `npm test`. Here, we use `bundle`
+and `rspec` to do the same things.
 
 ## Create an Unordered HTML List
 
@@ -98,19 +98,20 @@ Now we're going to create an HTML list together.
    sure you've [set Chrome as your default browser](https://support.google.com/chrome/answer/95417?co=GENIE.Platform%3DDesktop&hl=en).
 5. Hit enter to run the command
 
-> **Note:** If you are using the AWS Cloud9 IDE, the process for opening HTML files
-> is slightly different. In the lefthand file navigation, right click `my_list.html` 
-> (command + click for Mac users). In the context menu that appears, click the 
-> **Preview** option
-> 
-> ![aws preview](https://curriculum-content.s3.amazonaws.com/environment-setup/aws-preview-menu-option.png)
-> 
-> This will open the HTML page as a new tab in the IDE. You can also open this preview tab as a
-> separate browser tab by clicking the 'pop out' button in the upper right corner of the tab
-> 
-> ![pop out button](https://curriculum-content.s3.amazonaws.com/environment-setup/aws-pop-out-button.png)
+**Note:** If you are using the AWS Cloud9 IDE, the process for opening HTML
+files is slightly different. In the lefthand file navigation, right click
+`my_list.html` (command + click for Mac users). In the context menu that
+appears, click the **Preview** option:
 
-We see:
+![aws preview](https://curriculum-content.s3.amazonaws.com/environment-setup/aws-preview-menu-option.png)
+
+This will open the HTML page as a new tab in the IDE. You can also open this
+preview tab as a separate browser tab by clicking the 'pop out' button in the
+upper right corner of the tab
+
+![pop out button](https://curriculum-content.s3.amazonaws.com/environment-setup/aws-pop-out-button.png)
+
+Once you've opened the file in the browser, you should see:
 
 ![HTML file with non-marked-up content displays on one line](https://curriculum-content.s3.amazonaws.com/web-development/intro-the-shell/non_marked_up_list.png)
 
@@ -122,10 +123,10 @@ lines, it displays all the _content_ on one line. Not what we wanted.
 
 ### A Text Not-Really-A-List Into a Real-HTML-List
 
-> **REMEMBER**: This lab will provide you what to type. Subsequent labs will
-> deeply examine details of HTML markup. However, our goal here is to show how
-> slight changes to markup can quickly alter the browser's display of content.
-> If you're fuzzy on a detail that's fine.
+**REMEMBER**: This lab will provide you what to type. Subsequent labs will
+deeply examine details of HTML markup. However, our goal here is to show how
+slight changes to markup can quickly alter the browser's display of content. If
+you're fuzzy on a detail that's fine.
 
 #### Marking-Up List Items
 
@@ -149,10 +150,10 @@ Flip back to the **viewing tab** and refresh the page. You should see something 
 
 In this step we added some HTML _markup_:
 
-* The `<li>` is an HTML **list item** _opening tag_
-* The `</li>` is an HTML _closing tag_
-* We would call this pair of opening and closing tags a "`li` tag"
-* The whole length of text of _opening markup_ plus "wrapped" content plus
+- The `<li>` is an HTML **list item** _opening tag_
+- The `</li>` is an HTML _closing tag_
+- We would call this pair of opening and closing tags a "`li` tag"
+- The whole length of text of _opening markup_ plus "wrapped" content plus
   _closing markup_ (`<li>...content...</li>`) is called "an HTML element;" or,
   more exactly, an `li element`
 
@@ -224,12 +225,12 @@ and refresh your **viewing tab**.
 
 Here we return to a "bulleted" unordered list.
 
-> **ASIDE**: If you've been following along closely, you  might be wondering, if
-> we didn't have a `<ul>` tag around our `<li>` items earlier, how did the
-> browser know how treat those `<li>` as if they were in a `<ul>`? When browsers
-> detect problematic HTML they guess! This can lead to some very strange results
-> when you make an error, but if you write _invalid_ HTML, they try to recover.
-> HTML validity will be discussed further soon!
+**ASIDE**: If you've been following along closely, you  might be wondering, if
+we didn't have a `<ul>` tag around our `<li>` items earlier, how did the browser
+know how treat those `<li>` as if they were in a `<ul>`? When browsers detect
+problematic HTML they guess! This can lead to some very strange results when you
+make an error, but if you write _invalid_ HTML, they try to recover. HTML
+validity will be discussed further soon!
 
 ### Add a Description Paragraph
 
