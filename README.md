@@ -23,7 +23,7 @@ _rendered text_ yet. We'll be defining them in this lab.
 
 If you haven't already, fork and clone this lesson into your local environment.
 
-**Quick Review:** To fork this lab: 
+**Quick Review:** To fork this lab:
 
 1. click the **Fork** icon in the upper right of this page. This will bring you
    to GitHub. You may be prompted to choose where to fork — choose your personal
@@ -34,9 +34,11 @@ If you haven't already, fork and clone this lesson into your local environment.
    copied. This will create a folder in the location you're currently in
    containing your fork of this lab's repository.
 
-Navigate into the newly created directory in the terminal, then run `code .` to open the files
-in Visual Studio Code. (If you are using a different text editor, the command will be different. For the AWS Cloud9 IDE, for example, you must click on the file in the left navigation to open it)
-Finally, run `bundle` to install the lab's dependencies.
+Navigate into the newly created directory in the terminal, then run `code .` to
+open the files in Visual Studio Code. (If you are using a different text editor,
+the command will be different. For the AWS Cloud9 IDE, for example, you must
+click on the file in the left navigation to open it.) Finally, run `bundle` to
+install the lab's dependencies.
 
 **Note:** This lab's test use Ruby, so the commands we'll use are different than
 what you've seen before — `npm install` and `npm test`. Here, we use `bundle`
@@ -132,7 +134,7 @@ you're fuzzy on a detail that's fine.
 
 OK, we've reached the critical moment. We're going to tell the browser that
 these bits of letters represent **list items**. To do so we "wrap" each line
-with `<li>` and `</li>`. For example: `<li>"A Forest"</li>`
+with `<li>` and `</li>`:
 
 ```html
 <li>"Love Will Tear Us Apart"</li>
