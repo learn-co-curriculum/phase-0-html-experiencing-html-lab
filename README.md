@@ -44,7 +44,7 @@ install the lab's dependencies.
 what you've seen before — `npm install` and `npm test`. Here, we use `bundle`
 and `rspec` to do the same things.
 
-## Create an Unordered HTML List
+## Create an Ordered HTML List
 
 Think of a collection of things united by theme: Pok&eacute;mon, Old-school
 MC's, Prime Ministers of New Zealand, Magical Beasts and Where to Find Them,
@@ -53,11 +53,11 @@ with HTML.
 
 ### Create a Text File with Content
 
-In your terminal, choose a location to practice in and navigate to it. 
+In your terminal, choose a location to practice in and navigate to it.
 
-Create a
-new file called `my_list.txt`. The file extension suggests to humans and operating
-systems that it contains text. Open the file in VS Code by typing `code my_list.txt`.
+Create a new file called `my_list.txt`. The file extension suggests to humans
+and operating systems that it contains text. Open the file in VS Code by typing
+`code my_list.txt`; you will do all editing for this lesson in VS Code.
 
 Remember your collection of things? Now write in a few of them in your file.
 Here's an example from us (songs in the English post-punk genre).
@@ -77,12 +77,12 @@ we're trying to communicate.
 
 A problem with our _content_ is that it doesn't explicitly state anywhere that
 it's a list. In the example, we see a list of songs. But a browser doesn't know
-what a "list" is. 
+what a "list" is.
 
 We need to help browser **know**  what a list is. The secret is to add "notes"
-or "breadcrumbs" to the content that tell the browser that it has list items
-and that these items "go together" in a list. To add these "notes" we surround
-the _content_ with bits of _markup_, with bits of HTML. 
+or "breadcrumbs" to the content that tell the browser that it has list items and
+that these items "go together" in a list. To add these "notes" we surround the
+_content_ with bits of _markup_, with bits of HTML.
 
 We will take the text content from our text file, paste it into a new HTML file
 and then we will add _markup_ so that a browser "sees" a list. Let's write an
@@ -92,12 +92,11 @@ HTML file!
 
 Now we're going to create an HTML list together.
 
-1. Create a new file called `my_list.html`. You can either do this in the terminal and then open it in VS Code, or create the file directly in VS Code.
+1. Create a new file called `my_list.html`. You can either do this in the
+   terminal and then open it in VS Code, or create the file directly in VS Code.
 2. Copy the contents of `my_list.txt` and paste them into `my_list.html`
 3. Save the `my_list.html` file
-4. Open the `my_list.html` file in the browser. For Mac users, you can do this with `open my_list.html`. 
-   For Windows users, you can do this in your Ubuntu app with `explorer.exe index.html`. Make
-   sure you've [set Chrome as your default browser](https://support.google.com/chrome/answer/95417?co=GENIE.Platform%3DDesktop&hl=en).
+4. Open the `my_list.html` file in the browser. For Mac users, you can do this with `open my_list.html`. For Windows users, you can do this in your Ubuntu app with `explorer.exe index.html`. Make sure you've [set Chrome as your default browser](https://support.google.com/chrome/answer/95417?co=GENIE.Platform%3DDesktop&hl=en).
 5. Hit enter to run the command
 
 **Note:** If you are using the AWS Cloud9 IDE, the process for opening HTML
