@@ -211,7 +211,7 @@ HTML authors would expect our code from the previous section to be arranged:
 
 Update your document. Save it and refresh your **viewing tab**.
 
-Remember earlier when we saw the browser ignored that our _content_ was on
+Remember earlier when the browser ignored that _content_ was on
 separate lines? Cleaning up your code requires splitting lines, adding spaces,
 and adding tabs. Browsers ignore those characters that _humans_ use to make
 their HTML reader-friendly.
