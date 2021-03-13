@@ -40,7 +40,7 @@ the command will be different. For the AWS Cloud9 IDE, for example, you must
 click on the file in the left navigation to open it.) Finally, run `bundle` to
 install the lab's dependencies.
 
-**Note:** This lab's test use Ruby, so the commands we'll use are different than
+**Note:** This lab's test uses Ruby, so the commands we'll use are different than
 what you've seen before — `npm install` and `npm test`. Here, we use `bundle`
 and `rspec` to do the same things.
 
@@ -79,7 +79,7 @@ A problem with our _content_ is that it doesn't explicitly state anywhere that
 it's a list. In the example, we see a list of songs. But a browser doesn't know
 what a "list" is.
 
-We need to help browser **know**  what a list is. The secret is to add "notes"
+We need to help the browser **know**  what a list is. The secret is to add "notes"
 or "breadcrumbs" to the content that tell the browser that it has list items and
 that these items "go together" in a list. To add these "notes" we surround the
 _content_ with bits of _markup_, with bits of HTML.
@@ -117,7 +117,7 @@ Once you've opened the file in the browser, you should see:
 ![HTML file with non-marked-up content displays on one line](https://curriculum-content.s3.amazonaws.com/web-development/intro-the-shell/non_marked_up_list.png)
 
 As noted above, the browser doesn't know that items on new lines means "items
-in a list." Browsers ignore when HTML has is split onto new lines. We cover why
+in a list." Browsers ignore when HTML is split onto new lines. We cover why
 a little later in this README. Since the browser doesn't know we intend this to
 be a list **and** since browsers ignore when _content_ is split onto different
 lines, it displays all the _content_ on one line. Not what we wanted.
@@ -211,7 +211,7 @@ HTML authors would expect our code from the previous section to be arranged:
 
 Update your document. Save it and refresh your **viewing tab**.
 
-Remember earlier when noticed browsers ignored _content_ when it was on
+Remember earlier when the browser ignored that _content_ was on
 separate lines? Cleaning up your code requires splitting lines, adding spaces,
 and adding tabs. Browsers ignore those characters that _humans_ use to make
 their HTML reader-friendly.
@@ -226,7 +226,7 @@ and refresh your **viewing tab**.
 
 Here we return to a "bulleted" unordered list.
 
-**ASIDE**: If you've been following along closely, you  might be wondering, if
+**ASIDE**: If you've been following along closely, you might be wondering, if
 we didn't have a `<ul>` tag around our `<li>` items earlier, how did the browser
 know how treat those `<li>` as if they were in a `<ul>`? When browsers detect
 problematic HTML they guess! This can lead to some very strange results when you
@@ -304,6 +304,6 @@ browser is to your liking.
 
 In upcoming lessons, we will learn additional tags which provide us more
 ways to describe our content. We might be starting with lists today, but soon
-we'll be on this in exciting ways!
+we'll be using HTML in even more exciting ways!
 
 Welcome to the community of web page creators!
