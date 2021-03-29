@@ -55,7 +55,8 @@ with HTML.
 
 In your terminal, choose a location to practice in and navigate to it.
 
-Create a new file called `my_list.txt`. The file extension suggests to humans
+Create a new file called `my_list.txt`. (Recall that the command to use to create
+a file from the terminal is `touch`.) The file extension suggests to humans
 and operating systems that it contains text. Open the file in VS Code by typing
 `code my_list.txt`; you will do all editing for this lesson in VS Code.
 
