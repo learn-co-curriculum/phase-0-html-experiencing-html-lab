@@ -177,11 +177,11 @@ Wrap the entire set of `<li>` items with an `<ol>` and `</ol>` like so:
 
 ```html
 <ol>
-<li>"Love Will Tear Us Apart"</li>
-<li>"Bela Lugosi's Dead"</li>
-<li>"A Forest"</li>
-<li>"Nine While Nine"</li>
-<li>"Girlfriend In a Coma"</li>
+   <li>"Love Will Tear Us Apart"</li>
+   <li>"Bela Lugosi's Dead"</li>
+   <li>"A Forest"</li>
+   <li>"Nine While Nine"</li>
+   <li>"Girlfriend In a Coma"</li>
 </ol>
 ```
 
