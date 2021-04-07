@@ -1,0 +1,36 @@
+# Secret stored in learn-co-curriculum Settings/Secrets
+
+name: Sync with Canvas Pre-Work that Contains HTML
+
+on:
+  push:
+    branches: [master, main]
+    paths:
+      - "README.md"
+
+jobs:
+  sync:
+    name: Sync with Canvas
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.6
+
+      # hidden dep, could remove this step if Gemfile for github-to-canvas is updated
+
+      - name: Install github-to-canvas
+        run: gem install github-to-canvas
+
+      # environment variable secrets are currently set at repo level
+      # could be set at org level https://docs.github.com/en/actions/reference/encrypted-secrets#creating-encrypted-secrets-for-an-organization
+      - name: Sync from .canvas file
+        run: github-to-canvas -a -lr --forkable --prework --contains-html
+        env:
+          CANVAS_API_KEY: ${{ secrets.CANVAS_API_KEY }}
+          CANVAS_API_PATH: ${{ secrets.CANVAS_API_PATH }}
