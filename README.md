@@ -34,7 +34,7 @@ If you haven't already, fork and clone this lesson into your local environment.
    copied. This will create a folder in the location you're currently in
    containing your fork of this lab's repository.
 
-Navigate into the repository that you just cloned down in the terminal, then run `code .` to
+`cd` into the repository that you just cloned down in the terminal, then run `code .` to
 open the files in Visual Studio Code. (If you are using a different text editor,
 the command will be different. For the AWS Cloud9 IDE, for example, you must
 click on the file in the left navigation to open it.) Finally, run `bundle` to
