@@ -40,9 +40,11 @@ the command will be different. For the AWS Cloud9 IDE, for example, you must
 click on the file in the left navigation to open it.) Finally, run `bundle` to
 install the lab's dependencies.
 
-**Note:** This lab's test uses Ruby, so the commands we'll use are different than
-what you've seen before — `npm install` and `npm test`. Here, we use `bundle`
-and `rspec` to do the same things.
+**Note:** This lab's test uses Ruby, so the commands we'll use are different
+than what you've seen before — `npm install` and `npm test`. Here, we use
+`bundle` and `rspec` to do the same things. The `bundle` command installs the
+Ruby dependencies for this lab, and you only need to run it once. You can run
+`rspec` any time you want to run the tests.
 
 ## Create an Ordered HTML List
 
@@ -228,7 +230,7 @@ Here we return to a "bulleted" unordered list.
 
 **ASIDE**: If you've been following along closely, you might be wondering, if
 we didn't have a `<ul>` tag around our `<li>` items earlier, how did the browser
-know how treat those `<li>` as if they were in a `<ul>`? When browsers detect
+know to treat those `<li>` as if they were in a `<ul>`? When browsers detect
 problematic HTML they guess! This can lead to some very strange results when you
 make an error, but if you write _invalid_ HTML, they try to recover. HTML
 validity will be discussed further soon!
@@ -294,6 +296,17 @@ git push
 
 If you visit your fork on GitHub, you should now see that _you've_ made the most
 recent commit, and your solution will be present in the files.
+
+Once you've pushed your code to GitHub, do the following steps to submit your
+work on Canvas:
+
+1. Go to your repository in GitHub and copy the URL. Note, this should be copied
+   from the browser's address bar, and should start with `https://github.com/`
+
+2. Go to the assignment in Canvas and click Submit Assignment (or Start
+   Assignment)
+
+3. Paste in your GitHub URL as your submission
 
 ## Conclusion
 
