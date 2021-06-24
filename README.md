@@ -50,7 +50,7 @@ Ruby dependencies for this lab, and you only need to run it once. You can run
 
 Think of a collection of things united by theme: Pok&eacute;mon, Old-school
 MC's, Prime Ministers of New Zealand, Magical Beasts and Where to Find Them,
-etc. We're going to walk through how to create a list of these things marked up
+etc. We're going to walk through how to create a list of things marked up
 with HTML.
 
 ### Create a Text File with Content
@@ -61,8 +61,8 @@ The file extension suggests to humans and operating systems that it
 contains text. Open the file in VS Code by typing `code my_list.txt`; you
 will do all editing for this lesson in VS Code.
 
-Remember your collection of things? Now write in a few of them in your file.
-Here's an example from us (songs in the English post-punk genre).
+Below is a collection of song titles (songs in the English post-punk genre).
+Copy and paste the songs into your `my_list.txt` file.
 
 ```text
 "Love Will Tear Us Apart"
