@@ -8,7 +8,7 @@
 ## Introduction
 
 How do we go about writing text for the web? How is that different from the
-text that we write in a text file?  We're going to experience for ourselves how
+text that we write in a text file? We're going to experience for ourselves how
 these things are different in this lab.
 
 You don't need any prior knowledge of HTML for this lab. We're going to tell
@@ -55,8 +55,8 @@ with HTML.
 
 ### Create a Text File with Content
 
-In your terminal, while still inside of this labs directory, 
-create a new file called `my_list.txt` by running `touch my_list.txt`. 
+In your terminal, while still inside of this labs directory,
+create a new file called `my_list.txt` by running `touch my_list.txt`.
 The file extension suggests to humans and operating systems that it
 contains text. Open the file in VS Code by typing `code my_list.txt`; you
 will do all editing for this lesson in VS Code.
@@ -81,7 +81,7 @@ A problem with our _content_ is that it doesn't explicitly state anywhere that
 it's a list. In the example, we see a list of songs. But a browser doesn't know
 what a "list" is.
 
-We need to help the browser **know**  what a list is. The secret is to add "notes"
+We need to help the browser **know** what a list is. The secret is to add "notes"
 or "breadcrumbs" to the content that tell the browser that it has list items and
 that these items "go together" in a list. To add these "notes" we surround the
 _content_ with bits of _markup_, with bits of HTML.
@@ -178,11 +178,11 @@ Wrap the entire set of `<li>` items with an `<ol>` and `</ol>` like so:
 
 ```html
 <ol>
-   <li>"Love Will Tear Us Apart"</li>
-   <li>"Bela Lugosi's Dead"</li>
-   <li>"A Forest"</li>
-   <li>"Nine While Nine"</li>
-   <li>"Girlfriend In a Coma"</li>
+  <li>"Love Will Tear Us Apart"</li>
+  <li>"Bela Lugosi's Dead"</li>
+  <li>"A Forest"</li>
+  <li>"Nine While Nine"</li>
+  <li>"Girlfriend In a Coma"</li>
 </ol>
 ```
 
@@ -288,10 +288,10 @@ machine. To preserve work on your GitHub fork, you will need to stage the
 changes you've made, commit them, and push the commit up to GitHub. Use
 the following commands to do this:
 
-```sh
-git add .
-git commit -m "Completed assignment"
-git push
+```console
+$ git add .
+$ git commit -m "Completed assignment"
+$ git push
 ```
 
 If you visit your fork on GitHub, you should now see that _you've_ made the most
@@ -313,11 +313,10 @@ work on Canvas:
 In this lab, you have done the job of an HTML author. You
 receive raw _content_, you _mark it up_ to create _source text_. You test,
 tweak and adjust your _source text_ until the _rendered text_ displayed in the
-browser is to your liking. 
+browser is to your liking.
 
 In upcoming lessons, we will learn additional tags which provide us more
 ways to describe our content. We might be starting with lists today, but soon
 we'll be using HTML in even more exciting ways!
 
 Welcome to the community of web page creators!
-
