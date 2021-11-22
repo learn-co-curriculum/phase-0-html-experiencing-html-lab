@@ -30,15 +30,31 @@ If you haven't already, fork and clone this lesson into your local environment.
    GitHub account.
 2. Once your fork is created, click the **Code** button in GitHub, choose
    **SSH** and copy the provided git URL info.
-3. Clone to your local machine with `git clone` followed by the git URL you
-   copied. This will create a folder in the location you're currently in
-   containing your fork of this lab's repository.
 
-`cd` into the repository that you just cloned down in the terminal, then run
-`code .` to open the files in Visual Studio Code. (If you are using a different
-text editor, the command will be different. For the AWS Cloud9 IDE, for example,
-you must click on the file in the left navigation to open it.) Finally, run
-`npm install` to install the lab's dependencies.
+Then, in your terminal:
+
+**3.** Clone to your local machine with `git clone` followed by the git URL you
+copied.
+
+```console
+$ git clone git@github.com:<your-github-username>/phase-0-html-experiencing-html-lab.git
+```
+
+**4.** The previous command will create a folder in the location you're
+currently in containing your fork of this lab's repository. `cd` into the
+repository that you just cloned down in the terminal, then run `code .` to open
+the files in Visual Studio Code.
+
+```console
+$ cd phase-0-html-experiencing-html-lab.git
+$ code .
+```
+
+**5.** Finally, run `npm install` to install the lab's dependencies.
+
+```console
+$ npm install
+```
 
 ## Create an Ordered HTML List
 
@@ -162,11 +178,11 @@ Wrap the entire set of `<li>` items with an `<ol>` and `</ol>` like so:
 
 ```html
 <ol>
-<li>"Love Will Tear Us Apart"</li>
-<li>"Bela Lugosi's Dead"</li>
-<li>"A Forest"</li>
-<li>"Nine While Nine"</li>
-<li>"Girlfriend In a Coma"</li>
+  <li>"Love Will Tear Us Apart"</li>
+  <li>"Bela Lugosi's Dead"</li>
+  <li>"A Forest"</li>
+  <li>"Nine While Nine"</li>
+  <li>"Girlfriend In a Coma"</li>
 </ol>
 ```
 
