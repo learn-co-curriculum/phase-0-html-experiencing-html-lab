@@ -50,12 +50,6 @@ $ cd phase-0-html-experiencing-html-lab.git
 $ code .
 ```
 
-**5.** Finally, run `npm install` to install the lab's dependencies.
-
-```console
-$ npm install
-```
-
 ## Create an Ordered HTML List
 
 Think of a collection of things united by theme: Pokémon, Old-school MC's, Prime
@@ -279,34 +273,7 @@ Here's the full example code:
 
 When you're done, it is time to run this assignment's tests. Make sure that you
 have your HTML content in a file called `my_list.html` in order to pass the
-check. Type `npm test` and verify that your tests pass.
-
-## Saving Your Work Remotely
-
-Currently, the work you've done on this assignment is only on your local
-machine. To preserve work on your GitHub fork, you will need to stage the
-changes you've made, commit them, and push the commit up to GitHub. Use the
-following commands to do this:
-
-```console
-$ git add .
-$ git commit -m "Completed assignment"
-$ git push
-```
-
-If you visit your fork on GitHub, you should now see that _you've_ made the most
-recent commit, and your solution will be present in the files.
-
-Once you've pushed your code to GitHub, do the following steps to submit your
-work on Canvas:
-
-1. Go to your repository in GitHub and copy the URL. Note, this should be copied
-   from the browser's address bar, and should start with `https://github.com/`
-
-2. Go to the assignment in Canvas and click Submit Assignment (or Start
-   Assignment)
-
-3. Paste in your GitHub URL as your submission
+check. Type `learn test` and verify that your tests pass.
 
 ## Conclusion
 
