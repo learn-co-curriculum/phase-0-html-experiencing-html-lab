@@ -70,15 +70,15 @@ to humans and operating systems that it contains text. Open the file in VS Code
 by typing `code my_list.txt`; you will do all editing for this lesson in VS
 Code.
 
-Below is a collection of song titles (songs in the English post-punk genre).
-Copy and paste the songs into your `my_list.txt` file.
+Below is a collection of plant names.
+Copy and paste the plants into your `my_list.txt` file.
 
 ```text
-"Love Will Tear Us Apart"
-"Bela Lugosi's Dead"
-"A Forest"
-"Nine While Nine"
-"Girlfriend In a Coma"
+"Monstera Deliciosa"
+"Fiddle Leaf Fig"
+"Pilea"
+"Golden Pothos"
+"Peace Lily"
 ```
 
 The material we typed into the file is called the _content_. It's the thing
@@ -87,7 +87,7 @@ we're trying to communicate.
 ### Content as a List in a Text File
 
 A problem with our _content_ is that it doesn't explicitly state anywhere that
-it's a list. In the example, we see a list of songs. But a browser doesn't know
+it's a list. In the example, we see a list of plants. But a browser doesn't know
 what a "list" is.
 
 We need to help the browser **know** what a list is. The secret is to add
@@ -137,11 +137,11 @@ these bits of letters represent **list items**. To do so we "wrap" each line
 with `<li>` and `</li>`:
 
 ```html
-<li>"Love Will Tear Us Apart"</li>
-<li>"Bela Lugosi's Dead"</li>
-<li>"A Forest"</li>
-<li>"Nine While Nine"</li>
-<li>"Girlfriend In a Coma"</li>
+<li>"Monstera deliciosa"</li>
+<li>"Fiddle Leaf Fig"</li>
+<li>"Pilea"</li>
+<li>"Golden Pothos"</li>
+<li>"Peace Lily"</li>
 ```
 
 Flip back to the **viewing tab** and refresh the page. You should see something
@@ -178,11 +178,11 @@ Wrap the entire set of `<li>` items with an `<ol>` and `</ol>` like so:
 
 ```html
 <ol>
-  <li>"Love Will Tear Us Apart"</li>
-  <li>"Bela Lugosi's Dead"</li>
-  <li>"A Forest"</li>
-  <li>"Nine While Nine"</li>
-  <li>"Girlfriend In a Coma"</li>
+  <li>"Monstera deliciosa"</li>
+  <li>"Fiddle Leaf Fig"</li>
+  <li>"Pilea"</li>
+  <li>"Golden Pothos"</li>
+  <li>"Peace Lily"</li>
 </ol>
 ```
 
@@ -203,11 +203,11 @@ HTML authors would expect our code from the previous section to be arranged:
 
 ```html
 <ol>
-  <li>"Love Will Tear Us Apart"</li>
-  <li>"Bela Lugosi's Dead"</li>
-  <li>"A Forest"</li>
-  <li>"Nine While Nine"</li>
-  <li>"Girlfriend In a Coma"</li>
+  <li>"Monstera deliciosa"</li>
+  <li>"Fiddle Leaf Fig"</li>
+  <li>"Pilea"</li>
+  <li>"Golden Pothos"</li>
+  <li>"Peace Lily"</li>
 </ol>
 ```
 
@@ -240,13 +240,13 @@ validity will be discussed further soon!
 Let's introduce our list by adding some background:
 
 ```html
-<p>Some of my favorite post-punk and Goth songs!</p>
+<p>Some of my favorite plants!</p>
 <ul>
-  <li>"Love Will Tear Us Apart"</li>
-  <li>"Bela Lugosi's Dead"</li>
-  <li>"A Forest"</li>
-  <li>"Nine While Nine"</li>
-  <li>"Girlfriend In a Coma"</li>
+  <li>"Monstera deliciosa"</li>
+  <li>"Fiddle Leaf Fig"</li>
+  <li>"Pilea"</li>
+  <li>"Golden Pothos"</li>
+  <li>"Peace Lily"</li>
 </ul>
 ```
 
@@ -258,20 +258,20 @@ Lastly, let's put a "heading" on the top of our document. Add a `h1` element
 with an appropriate title inside.
 
 ```html
-<h1>My Music List</h1>
+<h1>My Plant List</h1>
 ```
 
 Here's the full example code:
 
 ```html
-<h1>My Music List</h1>
-<p>Some of my favorite post-punk and Goth songs!</p>
+<h1>My Plant List</h1>
+<p>Some of my favorite plants!</p>
 <ul>
-  <li>"Love Will Tear Us Apart"</li>
-  <li>"Bela Lugosi's Dead"</li>
-  <li>"A Forest"</li>
-  <li>"Nine While Nine"</li>
-  <li>"Girlfriend In a Coma"</li>
+  <li>"Monstera deliciosa"</li>
+  <li>"Fiddle Leaf Fig"</li>
+  <li>"Pilea"</li>
+  <li>"Golden Pothos"</li>
+  <li>"Peace Lily"</li>
 </ul>
 ```
 
