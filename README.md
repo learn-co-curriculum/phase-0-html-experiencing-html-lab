@@ -70,15 +70,15 @@ to humans and operating systems that it contains text. Open the file in VS Code
 by typing `code my_list.txt`; you will do all editing for this lesson in VS
 Code.
 
-Below is a collection of song titles (songs in the English post-punk genre).
-Copy and paste the songs into your `my_list.txt` file.
+Below is a collection of plant names.
+Copy and paste the plants into your `my_list.txt` file.
 
 ```text
-"Love Will Tear Us Apart"
-"Bela Lugosi's Dead"
-"A Forest"
-"Nine While Nine"
-"Girlfriend In a Coma"
+"Monstera Deliciosa"
+"Fiddle Leaf Fig"
+"Pilea"
+"Golden Pothos"
+"Peace Lily"
 ```
 
 The material we typed into the file is called the _content_. It's the thing
@@ -87,7 +87,7 @@ we're trying to communicate.
 ### Content as a List in a Text File
 
 A problem with our _content_ is that it doesn't explicitly state anywhere that
-it's a list. In the example, we see a list of songs. But a browser doesn't know
+it's a list. In the example, we see a list of plants. But a browser doesn't know
 what a "list" is.
 
 We need to help the browser **know** what a list is. The secret is to add
@@ -115,7 +115,7 @@ Now we're going to create an HTML list together.
 
 Once you've opened the file in the browser, you should see:
 
-![HTML file with non-marked-up content displays on one line](https://curriculum-content.s3.amazonaws.com/web-development/intro-the-shell/non_marked_up_list.png)
+![HTML file with non-marked-up content displays on one line](https://curriculum-content.s3.amazonaws.com/phase-0/html-experiencing-html-lab/non_marked_up_list.png)
 
 As noted above, the browser doesn't know that items on new lines means "items in
 a list." Browsers ignore when HTML is split onto new lines. We cover why a
@@ -137,17 +137,17 @@ these bits of letters represent **list items**. To do so we "wrap" each line
 with `<li>` and `</li>`:
 
 ```html
-<li>"Love Will Tear Us Apart"</li>
-<li>"Bela Lugosi's Dead"</li>
-<li>"A Forest"</li>
-<li>"Nine While Nine"</li>
-<li>"Girlfriend In a Coma"</li>
+<li>"Monstera deliciosa"</li>
+<li>"Fiddle Leaf Fig"</li>
+<li>"Pilea"</li>
+<li>"Golden Pothos"</li>
+<li>"Peace Lily"</li>
 ```
 
 Flip back to the **viewing tab** and refresh the page. You should see something
 like the following:
 
-![Song list](https://curriculum-content.s3.amazonaws.com/web-development/experiencing-html-lab/ul_song_list.png)
+![HTML file with content displayed as unordered list](https://curriculum-content.s3.amazonaws.com/phase-0/html-experiencing-html-lab/unordered_list.png)
 
 **AWESOME**.
 
@@ -178,17 +178,17 @@ Wrap the entire set of `<li>` items with an `<ol>` and `</ol>` like so:
 
 ```html
 <ol>
-  <li>"Love Will Tear Us Apart"</li>
-  <li>"Bela Lugosi's Dead"</li>
-  <li>"A Forest"</li>
-  <li>"Nine While Nine"</li>
-  <li>"Girlfriend In a Coma"</li>
+  <li>"Monstera deliciosa"</li>
+  <li>"Fiddle Leaf Fig"</li>
+  <li>"Pilea"</li>
+  <li>"Golden Pothos"</li>
+  <li>"Peace Lily"</li>
 </ol>
 ```
 
 Save the file and refresh the **viewing tab**. It should display:
 
-![List displayed as an ordered list](https://curriculum-content.s3.amazonaws.com/web-development/experiencing-html-lab/ordered_list.png)
+![List displayed as an ordered list](https://curriculum-content.s3.amazonaws.com/phase-0/html-experiencing-html-lab/ol_list.png)
 
 We told the browser that this set of list items that we "wrapped" in the
 **ordered list** tag go together **as a list**. Because we told the browser that
@@ -203,11 +203,11 @@ HTML authors would expect our code from the previous section to be arranged:
 
 ```html
 <ol>
-  <li>"Love Will Tear Us Apart"</li>
-  <li>"Bela Lugosi's Dead"</li>
-  <li>"A Forest"</li>
-  <li>"Nine While Nine"</li>
-  <li>"Girlfriend In a Coma"</li>
+  <li>"Monstera deliciosa"</li>
+  <li>"Fiddle Leaf Fig"</li>
+  <li>"Pilea"</li>
+  <li>"Golden Pothos"</li>
+  <li>"Peace Lily"</li>
 </ol>
 ```
 
@@ -224,7 +224,7 @@ Let's change our ordered list to be **unordered**. If `<ol>` means **ordered
 list**, you might guess that `<ul>` means **unordered list**. Make the change
 and refresh your **viewing tab**.
 
-![Back to Unordered List](https://curriculum-content.s3.amazonaws.com/web-development/experiencing-html-lab/unordered_list.png)
+![List displayed as an unordered list](https://curriculum-content.s3.amazonaws.com/phase-0/html-experiencing-html-lab/unordered_list.png)
 
 Here we return to a "bulleted" unordered list.
 
@@ -240,17 +240,19 @@ validity will be discussed further soon!
 Let's introduce our list by adding some background:
 
 ```html
-<p>Some of my favorite post-punk and Goth songs!</p>
+<p>Some of my favorite plants!</p>
 <ul>
-  <li>"Love Will Tear Us Apart"</li>
-  <li>"Bela Lugosi's Dead"</li>
-  <li>"A Forest"</li>
-  <li>"Nine While Nine"</li>
-  <li>"Girlfriend In a Coma"</li>
+  <li>"Monstera deliciosa"</li>
+  <li>"Fiddle Leaf Fig"</li>
+  <li>"Pilea"</li>
+  <li>"Golden Pothos"</li>
+  <li>"Peace Lily"</li>
 </ul>
 ```
 
 Take a look at your "rendered page" and verify the result is to your liking.
+
+![List displayed as an unordered list with title](https://curriculum-content.s3.amazonaws.com/phase-0/html-experiencing-html-lab/ul_list.png)
 
 ### Put a Header on It
 
@@ -258,24 +260,24 @@ Lastly, let's put a "heading" on the top of our document. Add a `h1` element
 with an appropriate title inside.
 
 ```html
-<h1>My Music List</h1>
+<h1>My Plant List</h1>
 ```
 
 Here's the full example code:
 
 ```html
-<h1>My Music List</h1>
-<p>Some of my favorite post-punk and Goth songs!</p>
+<h1>My Plant List</h1>
+<p>Some of my favorite plants!</p>
 <ul>
-  <li>"Love Will Tear Us Apart"</li>
-  <li>"Bela Lugosi's Dead"</li>
-  <li>"A Forest"</li>
-  <li>"Nine While Nine"</li>
-  <li>"Girlfriend In a Coma"</li>
+  <li>"Monstera deliciosa"</li>
+  <li>"Fiddle Leaf Fig"</li>
+  <li>"Pilea"</li>
+  <li>"Golden Pothos"</li>
+  <li>"Peace Lily"</li>
 </ul>
 ```
 
-![Final Document](https://curriculum-content.s3.amazonaws.com/web-development/experiencing-html-lab/final_header_paragraph_ul.png)
+![Final Document - unordered list with Header and title ](https://curriculum-content.s3.amazonaws.com/phase-0/html-experiencing-html-lab/final_list.png)
 
 When you're done, it is time to run this assignment's tests. Make sure that you
 have your HTML content in a file called `my_list.html` in order to pass the
