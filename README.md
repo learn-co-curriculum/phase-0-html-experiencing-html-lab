@@ -22,39 +22,8 @@ _rendered text_ yet. We'll be defining them in this lab.
 ## Getting Started
 
 If you haven't already, fork and clone this lesson into your local environment.
-
-**Quick Review:** To fork this lab:
-
-1. click the **Fork** icon in the upper right of this page. This will bring you
-   to GitHub. You may be prompted to choose where to fork — choose your personal
-   GitHub account.
-2. Once your fork is created, click the **Code** button in GitHub, choose
-   **SSH** and copy the provided git URL info.
-
-Then, in your terminal:
-
-**3.** Clone to your local machine with `git clone` followed by the git URL you
-copied.
-
-```console
-$ git clone git@github.com:<your-github-username>/phase-0-html-experiencing-html-lab.git
-```
-
-**4.** The previous command will create a folder in the location you're
-currently in containing your fork of this lab's repository. `cd` into the
-repository that you just cloned down in the terminal, then run `code .` to open
-the files in Visual Studio Code.
-
-```console
-$ cd phase-0-html-experiencing-html-lab.git
-$ code .
-```
-
-**5.** Finally, run `npm install` to install the lab's dependencies.
-
-```console
-$ npm install
-```
+Navigate into its directory in the terminal, then run `code .` to open the files
+in Visual Studio Code.
 
 ## Create an Ordered HTML List
 
@@ -103,15 +72,14 @@ HTML file!
 
 Now we're going to create an HTML list together.
 
-1. Create a new file called `my_list.html`. You can either do this in the
-   terminal and then open it in VS Code, or create the file directly in VS Code.
-2. Copy the contents of `my_list.txt` and paste them into `my_list.html`
-3. Save the `my_list.html` file
+1. Create a new file called `my_list.html`.
+2. Copy the contents of `my_list.txt` and paste them into `my_list.html`.
+3. Save the `my_list.html` file.
 4. Open the `my_list.html` file in the browser. For Mac users, you can do this
    with `open my_list.html`. For Windows users, you can do this in your Ubuntu
    app with `explorer.exe my_list.html`. Make sure you've
    [set Chrome as your default browser](https://support.google.com/chrome/answer/95417?co=GENIE.Platform%3DDesktop&hl=en).
-5. Hit enter to run the command
+5. Hit enter to run the command.
 
 Once you've opened the file in the browser, you should see:
 
@@ -155,7 +123,7 @@ In this step we added some HTML _markup_:
 
 - The `<li>` is an HTML **list item** _opening tag_
 - The `</li>` is an HTML _closing tag_
-- We would call this pair of opening and closing tags a "`li` tag"
+- We would call this pair of opening and closing tags an "`li` tag"
 - The whole length of text of _opening markup_ plus "wrapped" content plus
   _closing markup_ (`<li>...content...</li>`) is called "an HTML element;" or,
   more exactly, an `li element`
@@ -256,7 +224,7 @@ Take a look at your "rendered page" and verify the result is to your liking.
 
 ### Put a Header on It
 
-Lastly, let's put a "heading" on the top of our document. Add a `h1` element
+Lastly, let's put a "heading" on the top of our document. Add an `h1` element
 with an appropriate title inside.
 
 ```html
@@ -281,34 +249,7 @@ Here's the full example code:
 
 When you're done, it is time to run this assignment's tests. Make sure that you
 have your HTML content in a file called `my_list.html` in order to pass the
-check. Type `npm test` and verify that your tests pass.
-
-## Saving Your Work Remotely
-
-Currently, the work you've done on this assignment is only on your local
-machine. To preserve work on your GitHub fork, you will need to stage the
-changes you've made, commit them, and push the commit up to GitHub. Use the
-following commands to do this:
-
-```console
-$ git add .
-$ git commit -m "Completed assignment"
-$ git push
-```
-
-If you visit your fork on GitHub, you should now see that _you've_ made the most
-recent commit, and your solution will be present in the files.
-
-Once you've pushed your code to GitHub, do the following steps to submit your
-work on Canvas:
-
-1. Go to your repository in GitHub and copy the URL. Note, this should be copied
-   from the browser's address bar, and should start with `https://github.com/`
-
-2. Go to the assignment in Canvas and click Submit Assignment (or Start
-   Assignment)
-
-3. Paste in your GitHub URL as your submission
+check. Type `learn test` and verify that your tests pass.
 
 ## Conclusion
 

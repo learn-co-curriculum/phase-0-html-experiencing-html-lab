@@ -1,4 +1,4 @@
-name: Sync with Canvas Pre-Work that Contains HTML
+name: Sync with Canvas HTML
 
 on:
   push:
@@ -25,7 +25,7 @@ jobs:
 
       # Secret stored in learn-co-curriculum Settings/Secrets
       - name: Sync from .canvas file
-        run: github-to-canvas -a -lr --forkable --prework --contains-html
+        run: github-to-canvas -a -lr --forkable --contains-html
         env:
           CANVAS_API_KEY: ${{ secrets.CANVAS_API_KEY }}
           CANVAS_API_PATH: ${{ secrets.CANVAS_API_PATH }}
