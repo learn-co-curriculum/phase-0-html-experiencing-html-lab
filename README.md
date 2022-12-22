@@ -21,9 +21,9 @@ _rendered text_ yet. We'll be defining them in this lab.
 
 ## Getting Started
 
-If you haven't already, fork and clone this lesson into your local environment.
-Navigate into its directory in the terminal, then run `code .` to open the files
-in Visual Studio Code.
+If you haven't already, **fork and clone** this lesson into your local
+environment. Navigate into its directory in the terminal, then run `code .` to
+open the files in Visual Studio Code.
 
 ## Create an Ordered HTML List
 
@@ -249,7 +249,7 @@ Here's the full example code:
 
 When you're done, it is time to run this assignment's tests. Make sure that you
 have your HTML content in a file called `my_list.html` in order to pass the
-check. Type `learn test` and verify that your tests pass.
+check. Type `npm test` and verify that your tests pass.
 
 ## Conclusion
 
