@@ -249,7 +249,9 @@ Here's the full example code:
 
 When you're done, it is time to run this assignment's tests. Make sure that you
 have your HTML content in a file called `my_list.html` in order to pass the
-check. Type `npm test` and verify that your tests pass.
+check. Type `npm test` and verify that your tests pass. As always, don't forget
+you need to run `npm install` before running the tests, and to push up your code
+and submit it using CodeGrade once everything is passing.
 
 ## Conclusion
 
