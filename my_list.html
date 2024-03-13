@@ -1,0 +1,9 @@
+<h1>My Plant List</h1>
+<p>Some of my favorite plants!</p>
+<ul>
+  <li>"Monstera deliciosa"</li>
+  <li>"Fiddle Leaf Fig"</li>
+  <li>"Pilea"</li>
+  <li>"Golden Pothos"</li>
+  <li>"Peace Lily"</li>
+</ul>
